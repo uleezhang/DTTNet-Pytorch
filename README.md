@@ -4,7 +4,7 @@ A Pytorch Implementation of the ICASSP 2024 paper: Dual-Path TFC-TDF UNet for Mu
 
 Link to our paper:
 
-- arXiv (Accepted Version): https://arxiv.org/abs/2309.08684.
+- arXiv (Accepted Version): https://arxiv.org/abs/2309.08684
 - IEEE Xplore (Published Version): https://ieeexplore.ieee.org/document/10448020
 
 
