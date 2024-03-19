@@ -1,6 +1,11 @@
 # Dual-Path TFC-TDF UNet
 
-A Pytorch Implementation of the Dual-Path TFC-TDF UNet for Music Source Separation. DTTNet achieves 10.12 dB cSDR on vocals with 86% fewer parameters compared to BSRNN (SOTA). Our paper: https://arxiv.org/abs/2309.08684.
+A Pytorch Implementation of the ICASSP 2024 paper: Dual-Path TFC-TDF UNet for Music Source Separation. DTTNet achieves 10.12 dB cSDR on vocals with 86% fewer parameters compared to BSRNN (SOTA).
+
+Link to our paper:
+
+- arXiv (Accepted Version): https://arxiv.org/abs/2309.08684.
+- IEEE Xplore (Published Version): https://ieeexplore.ieee.org/document/10448020
 
 
 
@@ -174,14 +179,16 @@ git checkout bespoke
 ## Cite
 
 ```
-@misc{chen2023music,
-      title={Music Source Separation Based on a Lightweight Deep Learning Framework (DTTNET: DUAL-PATH TFC-TDF UNET)}, 
-      author={Junyu Chen and Susmitha Vekkot and Pancham Shukla},
-      year={2023},
-      eprint={2309.08684},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
-}
+@INPROCEEDINGS{chen_dttnet_2024,
+  author={Chen, Junyu and Vekkot, Susmitha and Shukla, Pancham},
+  booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Music Source Separation Based on a Lightweight Deep Learning Framework (DTTNET: DUAL-PATH TFC-TDF UNET)}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={656-660},
+  keywords={Deep learning;Time-frequency analysis;Source separation;Target tracking;Convolution;Market research;Acoustics;source separation;music;audio;dual-path;deep learning},
+  doi={10.1109/ICASSP48485.2024.10448020}}
 ```
 
 
