@@ -28,6 +28,6 @@ soundfile
 pyrootutils
 matplotlib
 seaborn
-onnxruntime-gpu
+#onnxruntime-gpu
 librosa==0.9.1
 museval

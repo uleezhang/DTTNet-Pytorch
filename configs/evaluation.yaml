@@ -20,7 +20,8 @@ ckpt_path: ${oc.env:ckpt_path}
 
 split: 'test'
 batch_size: 4
-device: 'cuda:0'
+#device: 'cuda:0'
+device: 'cpu'
 bss: fast # fast or official
 single: False # for debug investigation, only run the model on 1 single song
 

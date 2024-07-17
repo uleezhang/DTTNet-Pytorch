@@ -15,7 +15,7 @@ import soundfile as sf
 from tqdm import tqdm
 import numpy as np
 from src.callbacks.wandb_callbacks import get_wandb_logger
-from src.evaluation.separate import separate_with_onnx_TDF, separate_with_ckpt_TDF
+from src.evaluation.separate import separate_with_ckpt_TDF
 from src.utils import utils
 from src.utils.utils import load_wav, sdr, get_median_csdr, save_results, get_metrics
 
@@ -75,9 +75,9 @@ def evaluation(config: DictConfig):
                     mixture = np.mean(mixture, axis=0, keepdims=True)
                     target = np.mean(target, axis=0, keepdims=True)
                 #target_hat = {source: separate(config['batch_size'], models[source], onnxs[source], mixture) for source in sources}
-                if is_onnx:
-                    target_hat = separate_with_onnx_TDF(config.batch_size, model, ckpt_path, mixture)
-                else:
+                # if is_onnx:
+                #     target_hat = separate_with_onnx_TDF(config.batch_size, model, ckpt_path, mixture)
+                # else:
                     target_hat = separate_with_ckpt_TDF(config.batch_size, model, ckpt_path, mixture, config.device, config.double_chunk, config.overlap_add)
 
 

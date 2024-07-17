@@ -16,7 +16,8 @@ defaults:
 ckpt_path:
 mixture_path:
 batch_size: 4
-device: 'cuda:0'
+#device: 'cuda:0'
+device: 'cpu'
 
 double_chunk: False
 
